@@ -150,6 +150,9 @@ header a{
     height:0.7rem;
     width:0.5rem;
 }
+.req-btn:hover{
+    transform: scale(110%);
+}
 
 .footer{
     position:sticky;

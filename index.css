@@ -1,5 +1,8 @@
 body{
     background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Trebuchet MS';
 }
 
@@ -38,19 +41,19 @@ header a{
 }
 
 .active{
-    background-color: #355372 !important; 
+    background-color: #355372; 
     border-radius:3px; 
-    color: white !important;
+    color: white;
 }
 
 .nav-lists>a:hover{
-    background-color: #355372 !important; 
+    background-color: #355372; 
     border-radius:3px; 
-    color: white !important;
+    color: white;
 }
 
 .list-item{
-    background:transparent !important;
+    background:transparent;
     border: none;
 }
 
@@ -68,7 +71,7 @@ header a{
 }
 
 .nav-lists{
-    padding:0.4rem 0 !important;
+    padding:0.4rem 0;
 }
 
 .nav-lists>a{
@@ -96,16 +99,16 @@ header a{
     word-spacing: 0rem;
     padding:4%;
     padding-right: 5%;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
 }
 
 .tile-image{
-    height:6.5rem;
+    
     margin-bottom: 0.7rem;
 }
 
 .container{
-    border:1px solid rgba(86, 94, 105, 1);
+    border:1px solid rgba(86, 94, 105, 1) ;
     border-image: linear-gradient(to top, rgba(86, 94, 105, 1) 30%, rgba(86, 94, 105, 0.1) 80%)1;
     width: fit-content;
     padding:0.7rem 0.9rem 0 0.9rem;
@@ -114,7 +117,7 @@ header a{
 
 .main-content{
     flex-direction: column;
-    padding:0 0.7rem !important;
+    padding:0 0.7rem;
 }
 
 .brighter{
@@ -138,7 +141,7 @@ header a{
 
 .footer{
     position:sticky;
-    padding:0.1em !important;
+    padding:0.1em ;
 }
 
 footer{
@@ -169,4 +172,33 @@ footer{
 .footer-links{
     font-size: small;
     font-size: 0.7rem;
+}
+
+
+@media screen and (min-width: 1080px){
+    .logo{
+        width: 15%;
+        height: auto;
+        top:1%
+    }
+    
+    .separator{
+        margin-top:0.9%;
+    }
+    
+}
+
+@media screen and (max-width:779px) {
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:598px) {
+    .logo{
+        display: none;
+    }
+    .main-website{
+        overflow:visible;
+    }
 }
