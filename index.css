@@ -8,7 +8,7 @@ body{
 
 .main-website{
     margin: 0% 16%; 
-    overflow: hidden;
+    
 }
 
 header{
@@ -60,12 +60,12 @@ header a{
 .logo{
     height: 16%;
     width:auto;
-    top:2%;
+    top:1%;
 }
 
 .nav-tabs{
     border-bottom: none;
-    padding: 0.1% 0%;
+    padding: 1% 0.2%;
    
     
 }
@@ -84,7 +84,7 @@ header a{
 .separator{
     border-right:1px solid white;
     height:0.8rem;
-    margin-top:2%;
+    margin-top:1%;
 }
 
 .banner{
@@ -108,16 +108,20 @@ header a{
 }
 
 .container{
-    border:1px solid rgba(86, 94, 105, 1) ;
-    border-image: linear-gradient(to top, rgba(86, 94, 105, 1) 30%, rgba(86, 94, 105, 0.1) 80%)1;
-    width: fit-content;
-    padding:0.7rem 0.9rem 0 0.9rem;
     background-color:rgba(2, 20, 43, 0.889);
+    margin: 0%;
+    padding: 10px 20px;
+}
+
+.inner-border{
+    border:1px solid rgba(86, 94, 105, 1) ;
+    border-image: linear-gradient(to top, rgba(86, 94, 105, 1) 30%, rgba(86, 94, 105, 0.1) 80%)1;  
 }
 
 .main-content{
     flex-direction: column;
     padding:0 0.7rem;
+  
 }
 
 .brighter{
@@ -150,7 +154,6 @@ footer{
 }
 
 .footer>*{
-    font-size:0.75rem;
     margin-bottom: 0;
     word-spacing: 0.2rem;
     font-size: 0.6rem;
@@ -170,7 +173,6 @@ footer{
 }
 
 .footer-links{
-    font-size: small;
     font-size: 0.7rem;
 }
 
@@ -183,9 +185,30 @@ footer{
     }
     
     .separator{
-        margin-top:0.9%;
+        margin-top:0.8%;
+        height: 1rem;
     }
     
+    header section{
+        font-size: 100%;
+    }
+
+    .nav-lists>a{
+        font-size: 100%;
+    }
+
+    .banner-text{
+        font-size: 250%;
+    }
+    .main-text{
+        font-size: 1.1rem;
+    }
+    .footer>*{
+        font-size: 0.9rem;
+    }
+    .footer-links{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:779px) {
@@ -198,7 +221,5 @@ footer{
     .logo{
         display: none;
     }
-    .main-website{
-        overflow:visible;
-    }
+   
 }
