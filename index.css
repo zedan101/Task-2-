@@ -10,8 +10,10 @@ body{
     display: none;
 }
 
-.container{
+.container-fluid{
    padding: 0px 12%;
+   margin: 0px;
+   margin-right: 0px;
 }
 
 header{
@@ -232,7 +234,7 @@ footer{
    
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:550px) {
     .logo{
         display: none;
     }
