@@ -7,10 +7,16 @@ body{
 
 }
 
-.main-website{
-    margin: 0% 16%; 
-    
+.vertical{
+    display: none;
 }
+
+.container-fluid{
+   padding: 0px 17%;
+   margin: 0px;
+   margin-right: 0px;
+}
+
 
 header{
     overflow: auto;
@@ -50,7 +56,7 @@ header a{
 .logo{
     width: 15%;
     height:auto;
-    top:1%;
+    top:3%;
 }
 
 .nav-tabs{
@@ -88,7 +94,10 @@ header a{
     height:0.8rem;
     margin-top:1%;
 }
-
+.row{
+    padding: 0%;
+    margin: 0%;
+}
 .services{
     background-color:rgba(2, 20, 43, 0.889);
     padding: 15px 25px;
@@ -200,11 +209,8 @@ footer{
 
 @media screen and (min-width: 1080px){
     .logo{
-        width: 15%;
-        height: auto;
-        top:1%
+        top:3%
     }
-    
     .separator{
         margin-top:0.8%;
         height: 1rem;
@@ -218,8 +224,11 @@ footer{
         font-size: 100%;
     }
 
-    .our-services-content{
-        font-size: 100%;
+    .banner-text{
+        font-size: 250%;
+    }
+    .main-text{
+        font-size: 1.1rem;
     }
     .footer>*{
         font-size: 0.9rem;
@@ -228,8 +237,14 @@ footer{
         font-size: 1rem;
     }
 }
+@media screen and (max-width:977px) {
+    .logo{
+    
+        top: 2%;
+    }
+}
 
-@media screen and (max-width:779px) {
+@media screen and (max-width:879px) {
     .logo{
         display: none;
     }
@@ -240,4 +255,16 @@ footer{
         display: none;
     }
    
+}
+
+@media screen and (max-width:550px) {
+    .logo{
+        display: none;
+    }
+   .horizontal{
+    display: none;
+   }
+   .vertical{
+    display: inline-block;
+   }
 }
